@@ -2,16 +2,24 @@
 
 ViT-OutdoorLoc is a multi-scale and multi-modal Vision Transformer framework for UAV localization in outdoor environments under GPS/GNSS-denied or unreliable conditions.
 
-The proposed approach combines three complementary sources of information:
+The proposed approach combines three complementary data sources:
 
-- **RGB images:** Local visual information.
-- **Satellite images:** Global spatial context.
+- **RGB Images:** Local visual information.
+- **Satellite Images:** Global spatial context.
 - **DEM:** Terrain elevation information.
 
-Three configurations are investigated: ViT Baseline, Multi-Scale ViT, and Multi-Scale Multimodal ViT.
+Three architectures are investigated: ViT Baseline, Multi-Scale ViT, and Multi-Scale Multimodal ViT.
 
-Experiments are conducted on the UAVLoc-M3 dataset, covering AnYangRiver, Chongmingdao, and CuiJiaQiao.
+### Dataset
+Experiments are conducted using the **UAVLoc-M3 dataset**, covering three outdoor regions:
+- AnYangRiver
+- Chongmingdao
+- CuiJiaQiao
 
-**Objective:** Improve UAV 6-DoF pose estimation through multi-scale visual representations and multimodal information fusion.
+### Execution Environment
+The code is designed to run on **Kaggle Notebooks**. To execute the experiments, add the UAVLoc-M3 dataset as a Kaggle Notebook input and enable GPU acceleration when available.
+
+### Objective
+Improve UAV 6-DoF pose estimation through multi-scale visual representations and multimodal information fusion.
 
 **Status:** Research and experimental development.
